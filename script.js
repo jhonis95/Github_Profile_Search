@@ -5,7 +5,7 @@ const search=document.getElementById("search")
 const main=document.getElementById("main")
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault()
+    e.preventDefault()//for not update the page after submit
     const user = search.value
     if(user) {
         getUser(user)
@@ -68,8 +68,8 @@ function createErrorCard(msg){
 function addReposToCard(repos) {
     const reposEl = document.getElementById('repos')
     repos
-        .slice(0, 5)
-        .forEach(repo => {
+        .slice(repos.length-5, repos.length)//make show just the 5 last repositories
+        .forEach(repo => { //creating the repositories in the DOM
             const repoEl = document.createElement('a')
             repoEl.classList.add('repo')
             repoEl.href = repo.html_url

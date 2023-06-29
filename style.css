@@ -4,19 +4,26 @@
 }
 .maintitle{
     text-align: center;
-    color: #083C2B;
+    color: #6fff43;
+    -webkit-text-stroke: 0.5px black;
+
 }
 body{
-    background: url("imgs/background-img.webp");
+    background-image: url("imgs/background-img.webp");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #181818;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+
     color: #fff;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     overflow: hidden;
     margin: 0;
 }
@@ -34,14 +41,16 @@ body{
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-    color: #0d5e43;
+    color: #6fff43;
+    -webkit-text-stroke: 0.3px #2d7717;
     padding: 1rem;
     margin-bottom: 2rem;
     font-family: inherit;
     font-size: 1rem;
 }
 .userForm input::placeholder {
-    color: #083C2B;
+    color: #ffffff;
+    -webkit-text-stroke: 0.3px #2d7717;
 }
 .userForm input:focus {
     outline: none;
@@ -133,6 +142,12 @@ body{
     }
     #repos{
         text-align: center;
+    }
+}
+@media(min-width:1075px) {
+    body{
+        background-size: contain;
+        background-color: #181818;
     }
 }
 @keyframes fadeIn {

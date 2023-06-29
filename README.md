@@ -1,10 +1,18 @@
-<h1>Github profile search<h1>
+<h1>Github profile search</h1>
 <img src="imgs/dasktop_img.png" alt="project desktop img">
-<h2>description:<h2>
-<p>this project i am using to test javascript promisses<p>
+<h2>description:</h2>
+<p>This web application uses the Github public API to get the user information and AXIOS. To make the request, we can use the data to show the user infomation.</p>
+<ul>
+    <h3>What I used to make this project</h3>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>AXIOS</li>
+</ul>
+<ul>
+    <h3>What I have learned</h3>
+    <li>Responsive desing</li>
+    <li>DOM manipulation</li>
+    <li>Making request to external API</li>
+</ul>
 
-Using the Github public API to get the user information and AXIOS to make the requestes and return promisse, we can use the data to show the user infomation
-
-
-also already responsive:
-<img src="imgs/mobile_img.png" alt="project mobile img">
+<img style={height:700px} src="imgs/mobile_img.png" alt="project mobile img">

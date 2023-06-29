@@ -16,8 +16,6 @@ form.addEventListener('submit', (e) => {
 async function getUser(username){
     try{
         const {data}=await axios(APIURL+username)
-        // Axios is a Javascript library used to make HTTP requests from node. js or
-        // XMLHttpRequests from the browser and return a promisse
         createUserCard(data)
         getRepos(username)
     }catch(err){
